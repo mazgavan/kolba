@@ -61,7 +61,7 @@ header {
   max-width: 1040px;
   width: 100%;
   height: 44px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);

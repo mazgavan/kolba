@@ -34,7 +34,7 @@ article {
   border-radius: 5px;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(100% - 46px),
     rgba(0, 0, 0, 0.285) 100%
   );
   cursor: pointer;
@@ -47,6 +47,7 @@ article {
   padding: 12px 44px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 
   img {
     position: absolute;
