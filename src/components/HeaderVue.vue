@@ -16,6 +16,7 @@
       <span>{{ t("pages.header.languages.select") }}:&nbsp;</span>
 
       <span
+        class="language-switch__option"
         v-for="(locale, index) in availableLocales"
         :key="locale"
         @click="setLang(locale)"
@@ -87,6 +88,16 @@ header {
       &.active {
         color: var(--dark-blue);
       }
+    }
+  }
+
+  .language-switch__option {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    color: inherit;
+
+    :hover {
+      color: var(--dark-blue);
     }
   }
 }
