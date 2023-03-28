@@ -25,7 +25,7 @@ import Header from "./components/HeaderVue.vue";
 }
 @font-face {
   font-family: "Informal Roman";
-  src: url("./assets/fonts/INFROMAN.TTF");
+  src: url("./assets/fonts/Informal\ Roman\ Regular.ttf");
 }
 @font-face {
   font-family: "SF Pro Display";

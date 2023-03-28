@@ -91,8 +91,7 @@ const projects = ref([
     width: 100%;
 
     h1 {
-      font-family: "Valisca ";
-      font-weight: 900;
+      font-family: "Valisca";
       font-size: 96px;
       line-height: 179px;
       letter-spacing: 0.11em;
