@@ -1,0 +1,48 @@
+{
+  "pages": {
+    "header": {
+      "links": {
+        "main": "Main",
+        "resume": "Resume",
+        "portfolio": "Portfolio"
+      },
+      "languages": {
+        "select": "Select language",
+        "en-US": "ENG",
+        "ru-RU": "РУС"
+      }
+    },
+    "greeting": {
+      "header-image": "en/header.png",
+      "full-name": "Basil Alekseev",
+      "cards": {
+        "hello": {
+          "title": "HELLO EVERYONE!",
+          "content": "I&nbsp;am Basil, graphic designer from Russia.<br><br>I&nbsp;strive to&nbsp;bring creativity and innovation to&nbsp;every project&nbsp;I work on&nbsp;and am&nbsp;passionate about creating designs that are both aesthetically pleasing and functional."
+        },
+        "resume": {
+          "title": "My resume",
+          "content": "Click here to&nbsp;find out all-all-all about&nbsp;me."
+        }
+      }
+    },
+    "cases": {
+      "title": "my w<span>o</span>rks",
+      "filters": {
+        "best": "best",
+        "web": "web",
+        "mobile": "mobile",
+        "arts": "arts",
+        "other": "other"
+      },
+      "cases-cards": {
+        "cassio": "CASSIO watch web-page",
+        "honey": "Honey branding",
+        "game": "Concept art/game design",
+        "women": "Women's clothing online store",
+        "cocktail": "Сocktail сard",
+        "dodui": "Cassete sticker for DODUI & BonerKiller split"
+      }
+    }
+  }
+}

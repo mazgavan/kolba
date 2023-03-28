@@ -1,0 +1,48 @@
+{
+  "pages": {
+    "header": {
+      "links": {
+        "main": "Главная",
+        "resume": "Резюме",
+        "portfolio": "Портфолио"
+      },
+      "languages": {
+        "select": "Выбрать язык",
+        "en-US": "ENG",
+        "ru-RU": "РУС"
+      }
+    },
+    "greeting": {
+      "header-image": "ru/header.png",
+      "full-name": "ВАСИЛИЙ АЛЕКСЕЕВ",
+      "cards": {
+        "hello": {
+          "title": "ПРИВЕТ!",
+          "content": "Я&nbsp;Василий, дизайнер из&nbsp;Санкт-Петербурга.<br><br>Я&nbsp;стремлюсь привнести креативность и&nbsp;инновации в&nbsp;каждый проект, над которым работаю, и&nbsp;страстно люблю создавать дизайны, которые одновременно эстетичны и&nbsp;функциональны."
+        },
+        "resume": {
+          "title": "Моё резюме",
+          "content": "Нажмите сюда чтобы узнать всё-всё-всё обо мне."
+        }
+      }
+    },
+    "cases": {
+      "title": "раб<span>о</span>ты",
+      "filters": {
+        "best": "Лучшие",
+        "web": "Веб",
+        "mobile": "Мобилка",
+        "arts": "Картинки",
+        "other": "Остальное"
+      },
+      "cases-cards": {
+        "cassio": "CASSIO watch web-page",
+        "honey": "Honey branding",
+        "game": "Concept art/game design",
+        "women": "Women's clothing online store",
+        "cocktail": "Сocktail сard",
+        "dodui": "Cassete sticker for DODUI & BonerKiller split"
+      }
+    }
+  }
+}
