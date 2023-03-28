@@ -80,6 +80,7 @@ section {
       $plusPercents: 5%;
       margin: 0 (-($plusPercents/2)) 16px;
       width: 100% + $plusPercents;
+      user-select: none;
     }
 
     p {
@@ -104,6 +105,7 @@ section {
       .container__avatar {
         height: 100%;
         width: auto;
+        user-select: none;
       }
 
       .container__column {
