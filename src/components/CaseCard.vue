@@ -30,6 +30,7 @@ const { t } = useI18n();
 
 <style lang="scss" scoped>
 article {
+  aspect-ratio: 1/1;
   border-radius: 5px;
   background: linear-gradient(
     180deg,
