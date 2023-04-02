@@ -100,7 +100,7 @@ const projects = ref([
       :deep(span) {
         font-family: "Informal Roman";
         font-weight: 400;
-        font-size: 150px;
+        font-size: 250px;
         line-height: 180px;
       }
     }
