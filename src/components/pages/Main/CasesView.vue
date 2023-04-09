@@ -7,6 +7,7 @@
           class="cases__filter"
           v-for="filter in tabs"
           :key="filter"
+          :class="{ active: currentTab == filter }"
           @click="currentTab = filter"
           >{{ t(`pages.cases.filters.${filter}`) }}</span
         >
@@ -89,25 +90,41 @@ const projects = ref([
     max-width: 1040px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 16px;
+
+    @media (min-width: 1040px) {
+      padding: 0;
+    }
 
     h1 {
       font-family: "Valisca";
-      font-size: 96px;
-      line-height: 179px;
       letter-spacing: 0.11em;
       color: var(--black);
+      font-size: 32px;
+      line-height: 2;
 
       :deep(span) {
         font-family: "Informal Roman";
         font-weight: 400;
-        font-size: 250px;
-        line-height: 180px;
+        font-size: 64px;
+        line-height: 1;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 96px;
+        line-height: 179px;
+
+        :deep(span) {
+          font-size: 250px;
+          line-height: 180px;
+        }
       }
     }
 
     .cases__filters {
       display: flex;
-      gap: 50px;
+      flex-wrap: wrap;
+      gap: 12px 50px;
 
       .cases__filter {
         font-family: "SF Pro Display";
@@ -116,6 +133,11 @@ const projects = ref([
         font-size: 24px;
         line-height: 29px;
         color: var(--black);
+        cursor: pointer;
+
+        &.active {
+          font-weight: 600;
+        }
       }
     }
   }

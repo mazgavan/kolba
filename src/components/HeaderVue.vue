@@ -13,15 +13,18 @@
     </nav>
 
     <div class="header__language-switch">
-      <span>{{ t("pages.header.languages.select") }}:&nbsp;</span>
+      <span class="language-switch__title"
+        >{{ t("pages.header.languages.select") }}:&nbsp;</span
+      >
 
       <span
         class="language-switch__option"
-        v-for="(locale, index) in availableLocales"
-        :key="locale"
-        @click="setLang(locale)"
+        v-for="(lang, index) in availableLocales"
+        :key="lang"
+        :class="{ active: locale === lang }"
+        @click="setLang(lang)"
       >
-        {{ t(`pages.header.languages.${locale}`)
+        {{ t(`pages.header.languages.${lang}`)
         }}{{ index == availableLocales.length - 1 ? "" : " / " }}
       </span>
     </div>
@@ -71,19 +74,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 8px;
   z-index: 100;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
 
   nav {
     display: flex;
-    gap: 30px;
+    gap: 12px;
+
+    @media (min-width: 768px) {
+      gap: 30px;
+    }
 
     .nav__link {
       font-weight: 600;
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 12px;
+      line-height: 1.1;
       text-decoration: none;
       color: inherit;
+
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
 
       &.active {
         color: var(--dark-blue);
@@ -91,12 +106,25 @@ header {
     }
   }
 
+  .language-switch__title {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
   .language-switch__option {
     cursor: pointer;
     transition: color 0.2s ease-in-out;
     color: inherit;
+    font-size: 12px;
 
-    :hover {
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    &:hover,
+    &.active {
       color: var(--dark-blue);
     }
   }

@@ -1,6 +1,7 @@
 <template>
   <router-link :to="props.href" custom v-slot="{ navigate }">
     <article v-bind="$attrs" @click="navigate" class="case__container">
+      <span class="case__shadow"></span>
       <img
         :src="require(`@/assets/cases/${props.image}`)"
         :alt="props.title_key"
@@ -32,11 +33,6 @@ const { t } = useI18n();
 article {
   aspect-ratio: 1/1;
   border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) calc(100% - 46px),
-    rgba(0, 0, 0, 0.285) 100%
-  );
   cursor: pointer;
 
   min-height: 300px;
@@ -48,6 +44,20 @@ article {
   position: relative;
   overflow: hidden;
   z-index: 1;
+
+  .case__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) calc(100% - 46px),
+      rgba(0, 0, 0, 0.285) 100%
+    );
+  }
 
   img {
     position: absolute;
@@ -69,7 +79,7 @@ article {
     color: #ffffff;
 
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
-    z-index: 1;
+    z-index: 2;
   }
 }
 </style>

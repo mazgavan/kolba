@@ -100,12 +100,17 @@ section {
     .container__wrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 60px;
 
       .container__avatar {
         height: 100%;
-        width: auto;
+        width: 100%;
         user-select: none;
+
+        @media (min-width: 768px) {
+          width: auto;
+        }
       }
 
       .container__column {
