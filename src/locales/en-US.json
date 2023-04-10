@@ -18,22 +18,22 @@
       "cards": {
         "hello": {
           "title": "HELLO EVERYONE!",
-          "content": "I&nbsp;am Basil, graphic designer from Russia.<br><br>I&nbsp;strive to&nbsp;bring creativity and innovation to&nbsp;every project&nbsp;I work on&nbsp;and am&nbsp;passionate about creating designs that are both aesthetically pleasing and functional."
+          "content": "I&nbsp;am Basil, graphic designer from Russia.<br><br>I&nbsp;strive to&nbsp;bring creativity and innovation to&nbsp;every project&nbsp;I work on&nbsp;and am&nbsp;passionate about creating designs that are both aesthetically pleasing and functional.<br><br>"
         },
         "resume": {
           "title": "My resume",
-          "content": "Click here to&nbsp;find out all-all-all about&nbsp;me."
+          "content": "Click here to&nbsp;find out all-all-all about&nbsp;me.<br><br>"
         }
       }
     },
     "cases": {
       "title": "my w<span>o</span>rks",
       "filters": {
-        "best": "best",
-        "web": "web",
-        "mobile": "mobile",
-        "arts": "arts",
-        "other": "other"
+        "best": "Best",
+        "web": "Web",
+        "mobile": "Mobile",
+        "arts": "Arts",
+        "other": "Other"
       },
       "cases-cards": {
         "cassio": "CASSIO watch web-page",
