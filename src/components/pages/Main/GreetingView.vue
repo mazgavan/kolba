@@ -15,8 +15,10 @@
         <div class="container__column">
           <div
             class="fieldset__wrapper"
-            v-for="{ block, isBigLegend } in cards"
+            v-for="{ block, isBigLegend, onClick } in cards"
             :key="block"
+            @click="onClick"
+            :class="{ link: Boolean(onClick) }"
           >
             <fieldset>
               <legend
@@ -53,6 +55,12 @@ import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
+const scrollIntoPosition = (id: string) => {
+  const element = document.getElementById(id);
+
+  if (element) element.scrollIntoView({ behavior: "smooth" });
+};
+
 const cards = ref([
   {
     block: "hello",
@@ -61,6 +69,7 @@ const cards = ref([
   {
     block: "resume",
     isBigLegend: false,
+    onClick: () => scrollIntoPosition("portfolio"),
   },
 ]);
 </script>
@@ -123,6 +132,10 @@ section {
           padding: 16px 10px 10px;
           background: var(--grey);
           box-shadow: 36px 15px var(--black);
+
+          &.link {
+            cursor: pointer;
+          }
         }
 
         fieldset {

@@ -2,11 +2,12 @@
   <header>
     <nav>
       <router-link
-        v-for="{ name, href } in links"
+        v-for="{ name, href, onClick } in links"
         :key="name"
         :to="href"
-        :class="{ active: href == $route.path }"
+        :class="{ active: href == $route.fullPath }"
         class="nav__link"
+        @click="onClick"
       >
         {{ t(`pages.header.links.${name}`) }}
       </router-link>
@@ -42,6 +43,12 @@ const setLang = (lang: string) => {
   locale.value = lang;
 };
 
+const scrollIntoPosition = (id: string) => {
+  const element = document.getElementById(id);
+
+  if (element) element.scrollIntoView({ behavior: "smooth" });
+};
+
 const links = ref([
   {
     name: "main",
@@ -54,6 +61,7 @@ const links = ref([
   {
     name: "portfolio",
     href: "/#portfolio",
+    onClick: () => scrollIntoPosition("portfolio"),
   },
 ]);
 </script>
