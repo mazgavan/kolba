@@ -49,7 +49,7 @@ const projects = ref([
     href: "",
     title_key: "vv",
     image: "vkusvill.png",
-    tags: ["mobile"],
+    tags: ["best", "mobile"],
   },
   {
     href: "",
