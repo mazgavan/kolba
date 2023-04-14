@@ -14,7 +14,7 @@
     },
     "greeting": {
       "header-image": "ru/header.png",
-      "full-name": "ВАСИЛИЙ АЛЕКСЕЕВ",
+      "full-name": "Василий Алексеев",
       "cards": {
         "hello": {
           "title": "ПРИВЕТ!",
@@ -36,12 +36,12 @@
         "other": "Остальное"
       },
       "cases-cards": {
-        "cassio": "CASSIO watch web-page",
-        "honey": "Honey branding",
-        "game": "Concept art/game design",
-        "women": "Women's clothing online store",
-        "cocktail": "Сocktail сard",
-        "dodui": "Cassete sticker for DODUI & BonerKiller split"
+        "cassio": "Веб-страница часов Cassio",
+        "honey": "Логотип и упаковка мёда",
+        "game": "Концепт арт",
+        "women": "Магазин женской одежды",
+        "cocktail": "Коктейльная карта",
+        "dodui": "Наклейка на кассету сплита DODUI и BonerKiller"
       }
     }
   }
